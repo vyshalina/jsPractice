@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Числа</title>
+</head>
+<body>
+<script>
+	function numbers() {
+		var a = prompt('Введите число', '');
+		var b = prompt('Введите второе число', '');
+		if (isNaN(a) || isNaN(b)) {alert('Должны быть введены только числа!'); numbers(); return false}
+		if (a <= 0 || b <= 0) {alert('Оба числа должны быть больше 0'); numbers(); return false}	
+		alert('Вы ввели: ' + a +' и ' + b + ' Удвоим первое числи и посмотрим, станет ли оно равно второму');
+		var result = (+a + +a == b) ? 'значения равны': 'значения не равны';
+		alert(result);
+		return true;
+		}	
+	numbers();
+		
+</script>
+</body>
+</html>

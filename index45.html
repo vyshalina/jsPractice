@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Пример 36</title>
+</head>
+<body>
+<script> 
+	function checkAge(age) {
+		var age = prompt('Ваш возраст?');
+		if (age <= 0 || age > 120 || isNaN(age)){
+			alert('Введите корректный возраст!');
+			checkAge();
+		} else {test();}
+		function test(){
+			if (age < 18) {
+			var b = confirm ('Родители разрешили?');
+			if (b == true){alert('Доступ разрешен');}
+			else{alert('В доступе отказано');}
+		}
+		else{alert('Доступ разрешен');} 
+		}	
+	}
+	checkAge();
+
+</script>
+</body>
+</html>

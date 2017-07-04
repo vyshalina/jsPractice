@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<script>
+	function Pythagoras(){
+		alert('Пифагорова тройка. Давайте угадаем длины сторон треугльника!');
+		var a = prompt('Введите значение первого катета', ''), b = prompt('Введите значение второго катета', ''), c = prompt('Введите значение гипотенузы', '');
+		alert ('Катет 1 = ' + a + ' Катет 2 = '  + b + ' Гипотенуза = ' + c);
+		if(a <= 0 ||  a <= 0 || c <= 0 || isNaN(a) || isNaN(b) || isNaN(c)) {
+			alert('Введите корректные значения! Не должно быть отрицательных чисел и никаких букв!'); 
+			Pythagoras();
+		}; 
+		var result = ((a*a + b*b) == c*c) ? 'Ура: угадали длины сторон треугольника!': 'Не угадали длины';
+		alert(result);
+		}
+	Pythagoras()
+
+</script>
+</body>
+</html>
